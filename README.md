@@ -1,12 +1,14 @@
 # Syncfusion
 
 /* INPUT */
+
     :showClearButton='true' /* 'Colocar um Icon de limpar o campo' */
 
 /* GRID */
+
     clipMode='EllipsisWithTooltip' /* 'Colocar um tooltip nos valores do grid q está cortando' */
 
-/* 'Formato data grid '*/
+    /* 'Formato data grid '*/
     TO_CHAR(CAMPO, 'YYYY-MM-DD HH24:MI:SS') DATA_FORMAT, /* 'ORACLE ' */
     -------
     res.data.data.forEach(e => {
@@ -24,6 +26,7 @@
     
 
 /* 'Colocar um Icon na coluna do grid ' */
+
     <e-column :template="templateOpcoesOcorrencia" headerText='Obs' textAlign='Center' width='80'></e-column>
     templateOpcoes: function () {
         return {
