@@ -6,6 +6,22 @@
 /* GRID */
     clipMode='EllipsisWithTooltip' /* 'Colocar um tooltip nos valores do grid q está cortando' */
 
+/* 'Formato data grid '*/
+    TO_CHAR(CAMPO, 'YYYY-MM-DD HH24:MI:SS') DATA_FORMAT, /* 'ORACLE ' */
+    -------
+    res.data.data.forEach(e => {
+        if(e.DATA_FORMAT != null){
+            e.DATA_FORMAT = new Date(e.DATA_FORMAT);
+        }
+    });
+    this.grid_Encaminhamento = res.data.data;
+    return;
+    -------
+    <e-column field='DATA_FORMAT' headerText='Data' :format='formatoptions' textAlign='center' width='120'></e-column>
+    -------
+    formatoptions: { type: 'dateTime', format: 'dd/MM/y' },
+    formatoptionsLog: { type: 'dateTime', format: 'dd/MM/y hh:mm:ss a' },
+    
 
 /* 'Colocar um Icon na coluna do grid ' */
     <e-column :template="templateOpcoesOcorrencia" headerText='Obs' textAlign='Center' width='80'></e-column>
