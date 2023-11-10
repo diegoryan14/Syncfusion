@@ -1,5 +1,9 @@
 # Syncfusion
 
+/* INPUT */
+:showClearButton='true' /* 'Colocar um Icon de limpar o campo' */
+
+/* GRID */
 clipMode='EllipsisWithTooltip' /* 'Colocar um tooltip nos valores do grid q está cortando' */
 
 
