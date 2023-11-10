@@ -25,8 +25,7 @@
     formatoptionsLog: { type: 'dateTime', format: 'dd/MM/y hh:mm:ss a' },
     
 
-/* 'Colocar um Icon na coluna do grid ' */
-
+    /* 'Colocar um Icon na coluna do grid ' */
     <e-column :template="templateOpcoesOcorrencia" headerText='Obs' textAlign='Center' width='80'></e-column>
     templateOpcoes: function () {
         return {
